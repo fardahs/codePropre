@@ -4,23 +4,27 @@ import java.util.List;
 
 public class Aquarium {
 
-	private List<String> types;
-	private List<String> noms;
+	private List<String> typesAnimal;
+	private List<String> nomsAnimal;
 	private List<String> comportements;
 	
 	public void addAnimal(String typeAnimal, String nomAnimal, String comportement) {
-		types.add(typeAnimal);
-		noms.add(nomAnimal);
+		typesAnimal.add(typeAnimal);
+		nomsAnimal.add(nomAnimal);
 		comportements.add(comportement);
 	}
 	
 	public void afficherListeAnimaux(){
-		for (String nom: noms){
+		for (String nom: nomsAnimal){
 			System.out.println(nom);
 		}
 	}
 	
 	public double calculerKgsNourritureParJour(){
-		return noms.size() * 0.2;
+		return nomsAnimal.size() * 0.2;
 	}
+
+
+	
+	
 }

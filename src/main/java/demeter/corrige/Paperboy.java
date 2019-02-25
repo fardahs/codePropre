@@ -31,7 +31,16 @@ public class Paperboy {
 	public List<Customer> getCustomers() {
 		return customers;
 	}
-
+	
+	/**
+	 * Getter for funds
+	 * 
+	 * @return the funds
+	 */
+	public double getFunds() {
+		return funds;
+	}
+	
 	/**
 	 * Setter
 	 * 
@@ -40,15 +49,6 @@ public class Paperboy {
 	 */
 	public void setCustomers(List<Customer> customers) {
 		this.customers = customers;
-	}
-
-	/**
-	 * Getter for funds
-	 * 
-	 * @return the funds
-	 */
-	public double getFunds() {
-		return funds;
 	}
 
 	/**

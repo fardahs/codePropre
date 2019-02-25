@@ -13,9 +13,7 @@ public enum BirdTypeEnum  {
         default:
             return this.toString() + " fly";
         }
-        
-        
-        
+
     }
 
     public String getVoice() {

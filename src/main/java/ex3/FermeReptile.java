@@ -9,8 +9,9 @@ public class FermeReptile extends Zone {
 	private static final double MASSE_NOURRITURE = 0.1;
 
 	@Override
-	public double getPoids() {
-		return MASSE_NOURRITURE;
+	double calculerKgsNourritureParJour() {
+
+		return 0;
 	}
 
 }

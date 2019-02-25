@@ -8,6 +8,8 @@ public abstract class Zone {
 	private List<String> noms;
 	private List<String> comportements;
 	
+	abstract double calculerKgsNourritureParJour();
+	
 	public void addAnimal(String typeAnimal, String nomAnimal, String comportement) {
 		types.add(typeAnimal);
 		noms.add(nomAnimal);
@@ -23,10 +25,5 @@ public abstract class Zone {
 	public int compterAnimaux(){
 		return noms.size();
 	}
-	
-	public abstract double getPoids();
-	
-	public double calculerKgsNourritureParJour(){
-		return noms.size() * getPoids();
-	}
+
 }
